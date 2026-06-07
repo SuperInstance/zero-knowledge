@@ -1,0 +1,18 @@
+[package]
+name = "si-zero-knowledge"
+version = "0.1.0"
+edition = "2021"
+description = "Schnorr proofs, DLEQ proofs, range proofs, sigma protocols, and Fiat-Shamir transform in Rust"
+license = "MIT OR Apache-2.0"
+authors = ["SuperInstance"]
+repository = "https://github.com/SuperInstance/zero-knowledge"
+keywords = ["zero-knowledge", "schnorr", "dleq", "proof", "cryptography"]
+categories = ["cryptography", "algorithms"]
+readme = "README.md"
+
+[dependencies]
+curve25519-dalek = { version = "4", features = ["rand_core"] }
+rand = "0.8"
+sha2 = "0.10"
+
+[dev-dependencies]
